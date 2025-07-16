@@ -8,6 +8,18 @@ The system aims to provide a simple, clean, and intuitive user interface for cha
 
 ## Demo
 
+### Dataset Visualization
+
+![Image1](assets/1343.png)
+![Image2](assets/4029.png)
+
+### Screenshots
+
+![Drawing Canvas](assets/demo1.png)
+_User drawing a character on the black canvas with a white pen._
+
+![Prediction Result](assets/demo2.png)
+_The system displaying the predicted character and confidence._
 
 ## Technologies Used
 
