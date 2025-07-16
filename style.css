@@ -1,0 +1,58 @@
+/* Custom CSS for fine-tuning, most styling handled by Tailwind */
+
+/* Ensure canvas takes full available space within its flex container */
+#drawingCanvas {
+    /* The parent div handles overall sizing, this ensures canvas fills it */
+    display: block;
+    background-color: #000;
+    /* Default background color for the canvas */
+    /* Remove extra space below canvas */
+}
+
+/* Make sure the main content area grows to fill available space */
+main {
+    flex: 1;
+    /* Allows the main content to take up available vertical space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjust canvas container to be responsive and fill space */
+.relative.flex-grow {
+    width: 100%;
+    /* Default to full width on small screens */
+    height: 400px;
+    /* Default height, will be overridden by max-height on larger screens */
+}
+
+@media (min-width: 768px) {
+
+    /* Medium screens and up */
+    .relative.flex-grow {
+        height: auto;
+        /* Let content determine height, but constrained by max-height */
+        flex-basis: 60%;
+        /* Take up 60% of width in flex row */
+        max-width: 60%;
+        /* Max width for the canvas container */
+    }
+
+    .flex-col.md\:flex-row>div:last-child {
+        flex-basis: 40%;
+        /* Controls and prediction take remaining 40% */
+        max-width: 40%;
+    }
+}
+
+/* Ensure the canvas itself adapts to its parent's size */
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Optional: Add a subtle animation for prediction result */
+#predictionResult {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
