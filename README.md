@@ -2,7 +2,7 @@
 
 ## About the Project
 
-This project develops a web-based application for recognizing handwritten Nepali Barnamala (alphabets and numerals). It leverages a Convolutional Neural Network (CNN) trained on the Devanagari Handwritten Character Dataset to achieve high accuracy in classifying handwritten characters drawn by users in real-time.
+This project develops a web-based application for recognizing handwritten Nepali Barnamala (alphabets and numerals). It leverages a Convolutional Neural Network (CNN) trained on the Devanagari Handwritten Character Dataset to achieve high accuracy in classifying handwritten characters drawn by users in real-time. The application is designed to be user-friendly, allowing users to input their handwritten characters and receive instant recognition.
 
 The system aims to provide a simple, clean, and intuitive user interface for character drawing and instant recognition, demonstrating the power of deep learning in practical applications for Indic scripts.
 
@@ -53,16 +53,6 @@ The model was trained on the **Devanagari Handwritten Character Dataset** from t
 - **Total Images:** 92,000 (32x32 pixel grayscale)
 - **Classes:** 46 (10 numerals, 36 consonants)
 - **Split:** 85% Training, 15% Testing
-
-## File Structure
-
-NepaliOCR_Web_App/
-├── index.html # Main HTML structure of the web application
-├── script.js # JavaScript logic for drawing, model loading, and prediction
-├── style.css # CSS for styling the UI (uses Tailwind CSS)
-├── model/ # Directory containing the TensorFlow.js model files
-│ ├── model.json # Model architecture
-│ └── group1-shard1of1.bin # Model weights (can be multiple .bin files)
 
 ## Getting Started
 
